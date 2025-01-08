@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar & Sanju's Special Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff66b2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .user-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .user-section h2 {
+            color: #ff66b2;
+        }
+        .user-section div {
+            width: 45%;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .messages textarea, .messages input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .image-gallery img {
+            width: 100px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .image-gallery input[type="file"] {
+            margin: 10px 0;
+        }
+        .message-display {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .game button {
+            padding: 10px 20px;
+            background-color: #ff66b2;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .game button:hover {
+            background-color: #ff3385;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff66b2;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sagar & Sanju's Special Website</h1>
+</header>
+
+<main>
+    <!-- Sagar's Section -->
+    <div class="user-section">
+        <div>
+            <h2>Sagar's Section</h2>
+            <div class="image-gallery">
+                <h3>Share Photos & Videos</h3>
+                <input type="file" accept="image/*, video/*" id="mediaUploadSagar">
+                <div id="mediaDisplaySagar"></div>
+            </div>
+            <div class="messages">
+                <h3>Send a Message to Sanju</h3>
+                <textarea id="messageInputSagar" rows="4" placeholder="Write a message for
